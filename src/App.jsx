@@ -1,3 +1,4 @@
+import {Link, Route, Routes} from "react-router-dom";
 import Header from "./components/header";
 import Navbar from "./components/navbar";
 import Body from "./components/body";
@@ -6,11 +7,12 @@ import Skills from "./components/skills";
 import Project from "./components/project";
 import Contact from "./components/contact";
 import Footer from "./components/footer";
-function topic() {
+function App() {
   return(
-    <div>
+    <>
   <Header />
   <Navbar />
+
   <br/>
   <Body />
   <About />
@@ -21,7 +23,8 @@ function topic() {
   <Contact />
   <br/><br/>  
   <Footer />
-  </div>
+  
+  </>
 );
 }
-export default topic;
+export default App;
